@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi Edukasi Investasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💼 Platform Investasi Digital</h1>
+            <p class="subtitle">*Sijek & Imam*</p>
+        </header>
+
+        <div class="warning">
+            ⚠️ <strong>PERINGATAN EDUKASI:</strong> Ini hanya simulasi untuk pembelajaran tentang bahaya skema ponzi
+        </div>
+
+        <div class="dashboard">
+            <div class="balance-card">
+                <h3>Saldo Anda</h3>
+                <div class="amount" id="balance">Rp 1.000.000</div>
+            </div>
+            
+            <div class="click-game">
+                <h3>Klik untuk "Profit"</h3>
+                <button id="clickBtn" onclick="generateProfit()">KLIK UNTUK PROFIT</button>
+                <p id="profitMessage"></p>
+            </div>
+        </div>
+
+        <div class="packages">
+            <h2>📦 Paket Investasi Tersedia</h2>
+            <div class="package-grid">
+                <div class="package-card">
+                    <h3>Starter</h3>
+                    <div class="price">Rp 100.000</div>
+                    <p>Return: 20% per hari</p>
+                    <button onclick="buyPackage(100000)">BELI SEKARANG</button>
+                </div>
+                
+                <div class="package-card">
+                    <h3>Premium</h3>
+                    <div class="price">Rp 500.000</div>
+                    <p>Return: 50% per hari</p>
+                    <button onclick="buyPackage(500000)">BELI SEKARANG</button>
+                </div>
+                
+                <div class="package-card">
+                    <h3>VIP</h3>
+                    <div class="price">Rp 1.000.000</div>
+                    <p>Return: 100% per hari</p>
+                    <button onclick="buyPackage(1000000)">BELI SEKARANG</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="education">
+            <h2>📚 Fakta tentang Skema Ponzi</h2>
+            <ul>
+                <li>❌ Janji return tidak realistis</li>
+                <li>❌ Bergantung investor baru</li>
+                <li>❌ Tidak ada produk nyata</li>
+                <li>✅ Investasi seharusnya transparan</li>
+                <li>✅ Return realistis 5-15% per tahun</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
